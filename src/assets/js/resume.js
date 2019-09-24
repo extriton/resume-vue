@@ -136,7 +136,7 @@ export default {
             },
             {
                 name: 'Сайт:',
-                value: '<a href="http://extriton.pythonanywhere.com/" title="Резюме Козик А.М." target="_blank">http://extriton.pythonanywhere.com</a>'
+                value: '<a href="https://akresume.herokuapp.com" title="Резюме Козик А.М." target="_blank">https://akresume.herokuapp.com</a>'
             },
             {
                 name: 'Email:',
