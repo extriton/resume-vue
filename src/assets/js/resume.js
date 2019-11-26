@@ -59,10 +59,17 @@ export default {
         title: 'Портфолио',
         projects: [
             {
+                name: 'Dice',
+                description: 'HTML5, CSS3/SCSS, JS, Vue, Nuxt.js',
+                imageFilename: 'dice-vue.png',
+                link: 'https://dice2.herokuapp.com/',
+                isNew: true
+            },
+            {
                 name: 'SmartLotto',
                 description: 'HTML5, CSS3/SCSS, JS, Vue, Vuex, Vue-router, Vue-socket.io, Mongoose, NodeJS, Express, web3js, Solidity (ethereum smart-contract)',
                 imageFilename: 'smartlotto-vue.png',
-                link: '#',
+                link: 'https://smart-lotto.org/',
                 isNew: true
             },
             {
