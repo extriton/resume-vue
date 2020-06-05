@@ -59,6 +59,13 @@ export default {
         title: 'Портфолио',
         projects: [
             {
+                name: 'WorldFlashmob',
+                description: 'HTML5, CSS3/SCSS, JS, Vue, Vuex, Vue-router',
+                imageFilename: 'worldflashmob-vue',
+                link: 'https://flashmobworld.com/',
+                isNew: true
+            },
+            {
                 name: 'Dice',
                 description: 'HTML5, CSS3/SCSS, JS, Vue, Nuxt.js',
                 imageFilename: 'dice-vue.png',
