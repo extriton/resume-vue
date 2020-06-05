@@ -61,7 +61,7 @@ export default {
             {
                 name: 'WorldFlashmob',
                 description: 'HTML5, CSS3/SCSS, JS, Vue, Vuex, Vue-router',
-                imageFilename: 'worldflashmob-vue',
+                imageFilename: 'worldflashmob-vue.png',
                 link: 'https://flashmobworld.com/',
                 isNew: true
             },
