@@ -16,10 +16,10 @@
             <!-- foto / social block end here -->
             <!-- menu begin here -->
             <ul id="menu" class="right">
-                <li><router-link to="/resume/about">{{ person.about.title }}</router-link></li>
-                <li><router-link to="/resume/resume">{{ person.resume.title }}</router-link></li>
-                <li><router-link to="/resume/portfolio">{{ person.portfolio.title }}</router-link></li>
-                <li><router-link to="/resume/contacts">{{ person.contacts.title }}</router-link></li>
+                <li><router-link to="/about">{{ person.about.title }}</router-link></li>
+                <li><router-link to="/resume">{{ person.resume.title }}</router-link></li>
+                <li><router-link to="/portfolio">{{ person.portfolio.title }}</router-link></li>
+                <li><router-link to="/contacts">{{ person.contacts.title }}</router-link></li>
             </ul>
         </div>
         <div class="cont left">
@@ -32,17 +32,22 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 import Velocity from 'velocity-animate'
 
 export default {
     name: 'MainBlock',
-    data () {
-        return {
-        }
-    },
     computed: {
-        ...mapGetters(['person', 'isShowMain', 'currentPage'])
+        ...mapState({
+            person: state => state.person,
+            isShowMain: state => state.isShowMain,
+            currentPage: state => state.currentPage
+        })
+    },
+    methods: {
+        ...mapMutations([
+            'setCurrentPage'
+        ])
     },
     watch: {
         isShowMain (value) {
@@ -53,7 +58,7 @@ export default {
                 Velocity(this.$refs['shut-right'], { width: '0px' }, { duration: 3000, delay: 500 })
                 Velocity(this.$refs['page'], 'fadeIn', { duration: 500, delay: 500 })
                 setTimeout(() => {
-                    this.$store.commit('currentPage', this.$route.name)
+                    this.setCurrentPage(this.$route.name)
                 }, 1000)
 
             }

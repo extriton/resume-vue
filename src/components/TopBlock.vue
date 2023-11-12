@@ -19,21 +19,26 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapState, mapMutations } from 'vuex'
 
 export default {
     name: 'TopBlock',
-    data () {
-        return {}
-    },
     computed: {
-        ...mapGetters(['person', 'isOpenedCenterBlock'])
+        ...mapState({
+            person: state => state.person,
+            isOpenedCenterBlock: state => state.isOpenedCenterBlock
+        })
     },
     methods: {
+        ...mapMutations([
+            'setOpenCenterBlock',
+            'setEndScan',
+            'setShowMain'
+        ]),
         onOpen () {
-            this.$store.commit('openCenterBlock')
-            setTimeout(() => { this.$store.commit('endScan') }, 4000)
-            setTimeout(() => { this.$store.commit('showMain') }, 7000)
+            this.setOpenCenterBlock()
+            setTimeout(() => { this.setEndScan() }, 4000)
+            setTimeout(() => { this.setShowMain() }, 7000)
         },
     }
 }

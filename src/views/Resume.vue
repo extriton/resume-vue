@@ -1,9 +1,9 @@
 <template>
   <div id="wrappage">
     <div class="container" :style="{ marginTop: containerMarginTop }">
-      <TopBlock />
-      <CenterBlock />
-      <BottomBlock />
+      <top-block></top-block>
+      <center-block></center-block>
+      <bottom-block></bottom-block>
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@ import TopBlock from '@/components/TopBlock.vue'
 import CenterBlock from '@/components/CenterBlock.vue'
 import BottomBlock from '@/components/BottomBlock.vue'
 
-import { mapGetters } from 'vuex'
+import { mapState } from 'vuex'
 
 export default {
   name: 'Resume',
@@ -23,6 +23,11 @@ export default {
     BottomBlock
   },
   computed: {
+    ...mapState({
+      person: state => state.person,
+      isOpenedCenterBlock: state => state.isOpenedCenterBlock,
+      isShowMain: state => state.isShowMain
+    }),
     containerMarginTop () {
       let marginTop = 0
 
@@ -33,9 +38,8 @@ export default {
         else marginTop = '-355px'
       
       return marginTop
-    },
-    ...mapGetters(['person', 'isOpenedCenterBlock', 'isShowMain'])
-  },
+    }
+  }
 }
 </script>
 

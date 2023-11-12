@@ -8,13 +8,15 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
+import { mapState } from 'vuex'
 import Velocity from 'velocity-animate'
 
 export default {
     name: 'BottomBlock',
     computed: {
-        ...mapGetters(['isShowMain'])
+        ...mapState({
+            isShowMain: state => state.isShowMain
+        })
     },
     watch: {
         isShowMain (value) {

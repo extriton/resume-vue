@@ -32,19 +32,19 @@
 
 <script>
 import { VueTyper } from 'vue-typer'
-import { mapGetters } from 'vuex'
+import { mapState } from 'vuex'
 
 export default {
     name: 'ScannerBlock',
     components: {
         VueTyper
     },
-    data () {
-        return {
-        }
-    },
     computed: {
-        ...mapGetters(['person', 'isEndScan','isShowMain'])
+        ...mapState({
+            person: state => state.person,
+            isEndScan: state => state.isEndScan,
+            isShowMain: state => state.isShowMain
+        })
     }
 }
 </script>

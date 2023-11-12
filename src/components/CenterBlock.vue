@@ -1,14 +1,14 @@
 <template>
 <div v-if="isOpenedCenterBlock" class="center-block-wrapper">
-    <ScannerBlock />
-    <MainBlock />
+    <scanner-block></scanner-block>
+    <main-block></main-block>
 </div>
 </template>
 
 <script>
 import ScannerBlock from '@/components/ScannerBlock.vue'
 import MainBlock from '@/components/MainBlock.vue'
-import { mapGetters } from 'vuex'
+import { mapState } from 'vuex'
 
 export default {
     name: 'CenterBlock',
@@ -16,12 +16,10 @@ export default {
         ScannerBlock,
         MainBlock
     },
-    data () {
-        return {
-        }
-    },
     computed: {
-        ...mapGetters(['isOpenedCenterBlock'])
+        ...mapState({
+            isOpenedCenterBlock: state => state.isOpenedCenterBlock
+        })
     }
 }
 </script>

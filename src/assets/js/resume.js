@@ -6,15 +6,14 @@ export default {
     about: {
         title: 'Инфо',
         paragraphs: [
-            `В данный момент ищу удалённую работу в сфере Веб-разработки на позицию Junior/Middle VueJS.<br />` +
-            `Интересующее направление - разработка SPA/PWA на VueJS.`,
+            `В данный момент ищу удалённую работу в сфере Веб-разработки на позицию Middle Frontend/Fullstack developer (VueJS, NodeJS).<br />` +
+            `Интересующее направление - разработка SPA/PWA на VueJS / Vue 3.`,
             `Имеющиеся сопутствующе навыки:<br />` +
-            `Vue, Vuex, Vue-router, Vue-socket.io, CSS3 (animation/transition), SCSS, Bootstrap, Webpack, ES6, Velocity, NodeJS, express, Mongoose.`,
-            `Так же рассматриваю вакансии Angular 4+ на позицию Junior (мало практического опыта)<br/>`,
+            `Vue, Vuex, Vue-router, Vue-socket.io, CSS3 (animation/transition, flex), SCSS, Bootstrap, Webpack, ES6, Velocity, NodeJS, express, Mongoose, Sequilize.`,
             `Есть опыт практического применения/использования:<br />` + 
             `PHP, Symphony, Drupal, MODx, Python/Django, C++, Java.<br />` + 
             `БД: MySQL, PostgreSQL, MongoDB.`,
-            'Так же есть опыт разработки смарт-контрактов Ethereum на Solidity.'
+            'Так же есть опыт разработки смарт-контрактов Ethereum (Solidity), EOS (C++).'
         ],
         experience: {
             title: 'Опыт',
@@ -22,7 +21,7 @@ export default {
                 `Разработкой ПО на разных технологиях занимаюсь более 10лет`,
                 `2008-2013 / BTC / Инженер-программист`,
                 `2013-2014 / CINIMEX / Ведущий разработчик ПО`,
-                `2014-2019 / Веб-разработка, фриланс, соло-проекты`
+                `2014-2023 / Веб-разработка, фриланс, соло-проекты и т.д.`
             ]
         },
         new_projects: {
@@ -36,17 +35,10 @@ export default {
             { name: 'Javascript/ES6', level: 80 },
             { name: 'NodeJS', level: 75 },
             { name: 'ExpressJS', level: 70 },
-            { name: 'VueJS/Vuex/Vue-Router', level: 70 },
-            { name: 'AngularJS', level: 80 },
-            { name: 'Angular 4+', level: 20 },
-            { name: 'AJAX/JSON', level: 80 },
-            { name: 'HTML/CSS3', level: 85 },
-            { name: 'SCSS', level: 70 },
-            { name: 'Bootstrap', level: 60 },
-            { name: 'Python/Django', level: 40 },
-            { name: 'PHP', level: 30 },
-            { name: 'MODx', level: 35 },
-            { name: 'Solidity', level: 70 },
+            { name: 'VueJS/Vuex/Vue-Router', level: 80 },
+            { name: 'Nuxt', level: 60 },
+            { name: 'AJAX/JSON', level: 90 },
+            { name: 'HTML/CSS3/SCSS', level: 85 },
         ],
         education: {
             title: 'Образование',
@@ -59,72 +51,100 @@ export default {
         title: 'Портфолио',
         projects: [
             {
+                name: 'Goldenhills (game)',
+                description: 'HTML5, CSS3, JS, Vue JS, NodeJS, Sequilize, C++, EOS',
+                imageFilename: 'playing-goldenhills.jpg',
+                link: 'https://playing.goldenhills.io/',
+                isNew: true
+            },
+            {
+                name: 'Goldenhills (landing)',
+                description: 'HTML5, CSS3, JS, VueJS',
+                imageFilename: 'goldenhills.jpg',
+                link: 'https://goldenhills.io/',
+                isNew: true
+            },
+            {
+                name: 'Tokenlands (game)',
+                description: 'HTML5, CSS3, JS, Vue JS, C++, EOS',
+                imageFilename: 'playing-tokenlands.jpg',
+                link: 'https://playing.tokenlands.io/en/play',
+                isNew: true
+            },
+            {
+                name: 'Tokenlands (landing)',
+                description: 'HTML5, CSS3, JS, VueJS',
+                imageFilename: 'tokenlands.jpg',
+                link: 'https://tokenlands.io/',
+                isNew: true
+            },
+            {
+                name: 'Snake',
+                description: 'HTML5, CSS3, JS, Vue 3',
+                imageFilename: 'snake-vue.jpg',
+                link: 'https://snake-vue3.onrender.com',
+                isNew: true
+            },
+            {
                 name: 'WorldFlashmob',
                 description: 'HTML5, CSS3/SCSS, JS, Vue, Vuex, Vue-router',
-                imageFilename: 'worldflashmob-vue.png',
+                imageFilename: 'worldflashmob-vue.jpg',
                 link: 'https://flashmobworld.com/',
                 isNew: true
             },
             {
                 name: 'Dice',
-                description: 'HTML5, CSS3/SCSS, JS, Vue, Nuxt.js',
-                imageFilename: 'dice-vue.png',
+                description: 'HTML5, CSS3/SCSS, JS, VueJS, Nuxt.js',
+                imageFilename: 'dice-vue.jpg',
                 link: 'https://dice2.herokuapp.com/',
-                isNew: true
+                isNew: false
             },
             {
                 name: 'SmartLotto',
-                description: 'HTML5, CSS3/SCSS, JS, Vue, Vuex, Vue-router, Vue-socket.io, Mongoose, NodeJS, Express, web3js, Solidity (ethereum smart-contract)',
-                imageFilename: 'smartlotto-vue.png',
+                description: 'HTML5, CSS3/SCSS, JS, VueJS, Vuex, Vue-router, Vue-socket.io, Mongoose, NodeJS, Express, web3js, Solidity (ethereum smart-contract)',
+                imageFilename: 'smartlotto-vue.jpg',
                 link: 'https://smart-lotto.org/',
-                isNew: true
-            },
-            {
-                name: 'Snake',
-                description: 'HTML5, CSS3, JS, VueJS',
-                imageFilename: 'snake-vue.png',
-                link: '/snake',
-                isNew: true
+                isNew: false
             },
             {
                 name: 'Maxigames',
                 description: 'HTML5, CSS3, JS, AngularJS, Express, Mongoose, NodeJS, Socket.io',
-                imageFilename: 'maxigames-angularjs.png',
+                imageFilename: 'maxigames-angularjs.jpg',
                 link: '#',
-                isNew: true
+                isNew: false
             },
             {
                 name: 'Maxidrop',
                 description: 'HTML5, CSS3, JS, jQuery, Python, Django',
-                imageFilename: 'maxidrop-django.png',
+                imageFilename: 'maxidrop-django.jpg',
                 link: '#',
-                isNew: true
+                isNew: false
             },
             {
                 name: 'KK Service',
                 description: 'HTML5, CSS3, JS, AngularJS, Python, Django',
-                imageFilename: 'kks-angularjs.png',
+                imageFilename: 'kks-angularjs.jpg',
                 link: '#',
                 isNew: false
             },
             {
                 name: 'Multirezonans',
                 description: 'HTML5, CSS3, JS, Bootstrap',
-                imageFilename: 'multirezonans.png',
+                imageFilename: 'multirezonans.jpg',
                 link: '#',
                 isNew: false
             },
             {
                 name: 'Autohub',
                 description: 'HTML5, CSS3, JS, Bootstrap',
-                imageFilename: 'autohub-html.png',
+                imageFilename: 'autohub-html.jpg',
                 link: '#',
                 isNew: false
             },
             {
                 name: 'Ab',
                 description: 'HTML5, CSS3, JS, Bootstrap',
-                imageFilename: 'ab-html.png',
+                imageFilename: 'ab-html.jpg',
                 link: '#',
                 isNew: false
             }
@@ -133,7 +153,7 @@ export default {
     contacts: {
         title: 'Контакты',
         paragraphs: [
-            'Если вас заинтересовала моя кандидатура просьба связаться со мной по E-mail.'
+            'Если вас заинтересовала моя кандидатура просьба связаться со мной по E-mail или Skype.'
         ],
         info: [
             {
@@ -145,20 +165,24 @@ export default {
                 value: 'Республика Беларусь, г. Минск'
             },
             {
-                name: 'Телефон:',
-                value: 'нет'
+                name: 'GitHub:',
+                value: 'https://github.com/extriton'
             },
             {
-                name: 'Сайт:',
-                value: '<a href="https://akresume.herokuapp.com" title="Резюме Козик А.М." target="_blank">https://akresume.herokuapp.com</a>'
+                name: 'WWW:',
+                value: '<a href="https://akresume.herokuapp.com" title="Andrey Kozik | CV" target="_blank">https://akresume.herokuapp.com</a>'
             },
             {
                 name: 'Email:',
                 value: '<a href="mailto:etextriton@gmail.com" title="Написать письмо">etextriton@gmail.com</a>'
             },
             {
-                name: 'Скачать',
-                value: '<a href="/files/резюме_козика_а_м.doc" title="Скачать резюме" download>резюме</a>'
+                name: 'Skype:',
+                value: 'single_wolf3'
+            },
+            {
+                name: 'Download',
+                value: '<a href="/files/резюме_козика_а_м.docx" title="Скачать резюме" download>Andrey Kozik | CV</a>'
             }
         ]
     },
