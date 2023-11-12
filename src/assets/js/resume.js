@@ -170,7 +170,7 @@ export default {
             },
             {
                 name: 'WWW:',
-                value: '<a href="https://akresume.herokuapp.com" title="Andrey Kozik | CV" target="_blank">https://akresume.herokuapp.com</a>'
+                value: '<a href="https://akozik.onrender.com" title="Andrey Kozik | CV" target="_blank">https://akozik.onrender.com</a>'
             },
             {
                 name: 'Email:',
