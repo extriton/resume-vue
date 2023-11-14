@@ -98,7 +98,7 @@ export default {
                 name: 'Dice',
                 description: 'HTML5, CSS3/SCSS, JS, VueJS, Nuxt.js',
                 imageFilename: 'dice-vue.jpg',
-                link: 'https://dice2.herokuapp.com/',
+                link: 'https://dice.onrender.com/',
                 isNew: false
             },
             {
